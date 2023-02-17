@@ -6,7 +6,7 @@ export default defineComponent({
   setup() {
     const profileTopImg = getImageUrl('it-products');
 
-    function getImageUrl(name: string) {
+    function getImageUrl(name) {
       return new URL(`/src/assets/images/avatars/${name}.jpg`, import.meta.url)
         .href;
     }
